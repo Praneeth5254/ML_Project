@@ -1,4 +1,5 @@
 import sys  # Import the sys module to access system-specific parameters and functions
+from src.logger import logging
 
 # Function to extract and format detailed error message
 def error_message_detail(error, error_detail: sys):
@@ -33,3 +34,4 @@ class CustomException(Exception):
     def __str__(self):
         # Return the detailed error message when the exception is printed
         return self.error_message
+    
